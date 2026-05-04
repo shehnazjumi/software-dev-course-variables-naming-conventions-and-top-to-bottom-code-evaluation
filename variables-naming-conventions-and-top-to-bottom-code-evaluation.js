@@ -24,9 +24,15 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice";
+let itemQuantity = 5;
+let totalCost = 20;
 
-console.log(d);
+// Enhanced variables
+let itemPricePerUnit = totalCost / itemQuantity; 
+let storeName = "Corner Café";
+
+let purchaseMessage = customerName + " bought " + itemQuantity + " items at " + storeName + " for $" + totalCost + ".";
+
+console.log(purchaseMessage);
+console.log("Price Per Unit: $" + itemPricePerUnit);
